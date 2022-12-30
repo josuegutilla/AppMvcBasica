@@ -4,6 +4,7 @@ namespace AppMvcBasica.Models
 {
     public class Produto : Entidade 
     {
+        [Display(Name = "Fornecedor")]
         public Guid FornecedorId { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
